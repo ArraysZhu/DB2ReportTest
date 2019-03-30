@@ -68,8 +68,6 @@ class HtmlParser(object):
         with open(os.path.join(self.html_path, 'Report', html_name), 'r') as f:
             html_data = f.read()
         dict_list = []
-
-        
         soup = bs(html_data, 'html.parser')
         tr_tag_list_dou = [tag.select('tr') for tag in soup.select('div#content > table > tbody')]
         for tr_tag_list in tr_tag_list_dou:
