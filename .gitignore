@@ -1,0 +1,5 @@
+test.txt
+*.db
+*.pyc
+.idea
+venv
